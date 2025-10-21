@@ -1,4 +1,5 @@
 FROM     node:20
+USER     root
 RUN      mkdir /app
 RUN      useradd -d /app roboshop
 RUN      chown roboshop:roboshop /app
