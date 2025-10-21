@@ -1,7 +1,7 @@
 FROM     node:20
-RUN      mkdir /app \
-         useradd -d /app roboshop \
-         chown roboshop:roboshop /app \
+RUN      mkdir /app
+RUN      useradd -d /app roboshop
+  RUN    chown roboshop:roboshop /app
 USER     roboshop
 COPY     package.json run.sh server.js /app
 WORKDIR  /app
