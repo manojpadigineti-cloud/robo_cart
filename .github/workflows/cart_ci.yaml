@@ -3,8 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - "*"
-      - 'main'
+      - "main"
 run-name: ${{ github.sha }} | ${{ github.event.head_commit.message }}
 jobs:
   cart-ms:
